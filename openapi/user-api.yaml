@@ -1,0 +1,32 @@
+tags:
+  - name: user
+    description: User Api Mapping
+paths:
+  /api/user:
+    get:
+      summary: Get all users
+      operationId: getUsers
+      tags:
+        - user
+      responses:
+        '200':
+          description: A list of users
+          content:
+            application/json:
+              schema:
+                type: string
+    post:
+      summary: Create a user
+      operationId: createUser
+      tags:
+        - user
+    put:
+      summary: Update a user
+      operationId: updateUser
+      tags:
+        - user
+    delete:
+      summary: Delete a user
+      operationId: deleteUser
+      tags:
+        - user
